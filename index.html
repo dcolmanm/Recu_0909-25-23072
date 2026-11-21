@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combustible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Calculadora de Combustible</h1>
+
+        <p>Regular: Q29.50</p>
+        <p>Super: Q32.50</p>
+        <p>Diesel: Q38.00</p>
+
+        <h2>Datos</h2>
+
+        <label for="tipoCombustible">Tipo de combustible</label>
+        <input type="text" id="tipoCombustible" placeholder="Regular / Super / Diesel"><br>
+
+        <label for="precio">Precio por galón (Q)</label>
+        <input type="number" id="precio" step="0.01" min="0" placeholder="29.50"><br>
+
+        <label for="cantidad">Cantidad (galones)</label>
+        <input type="number" id="cantidad" step="0.01" min="0" placeholder="10"><br>
+
+        <label for="porcentaje">% de exención</label>
+        <input type="number" id="porcentaje" step="0.01" min="0" max="100" placeholder="0"><br>
+
+        <button id="btnCalcular">Calcular</button>
+
+        <h3>Resultado</h3>
+        <div id="resultado" class="resultado-vacio">Aquí aparecerá el total</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
